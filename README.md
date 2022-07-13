@@ -17,3 +17,9 @@ This code is tested on Ubuntu 22.04.
 ```bash
 conda create -n <env_name> selenium webdriver-manager pyyaml
 ```
+
+## Caveats
+
+This is not a hack, all it does is automating an otherwise tedious process of page refreshing and manual monitoring.
+
+**Only used for personal non-commercial purpose.**
