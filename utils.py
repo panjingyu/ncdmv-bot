@@ -6,11 +6,11 @@ from selenium.webdriver.firefox.service import Service
 from webdriver_manager.firefox import GeckoDriverManager
 
 
-def get_firefox_driver():
+def get_firefox_driver(profile_path):
     service  = Service(executable_path=GeckoDriverManager().install())
     options = webdriver.FirefoxOptions()
     options.add_argument('-profile')
-    options.add_argument('/home/jpan/snap/firefox/common/.cache/mozilla/firefox/o6qidfsv.default')
+    options.add_argument(profile_path)
     driver = webdriver.Firefox(service=service, options=options)
     return driver
 

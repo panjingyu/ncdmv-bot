@@ -57,8 +57,8 @@ if __name__ == '__main__':
     parser.add_argument('-c', '--config', type=str, default='config.yaml',
                         help='Config yaml file.')
     args = parser.parse_args()
-    driver = get_firefox_driver()
     config = yaml.safe_load(open(args.config, 'r'))
+    driver = get_firefox_driver(config['firefox profile'])
     while True:
         try:
             # restart automatically when exception occurs

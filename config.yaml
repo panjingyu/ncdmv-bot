@@ -1,6 +1,7 @@
 first name: John
 last name: Doe
-zip number: 12345
-phone number: 9876543210
+zip number: '12345'
+phone number: '9876543210'
 email: your@email.com
+firefox profile: <the path of the Firefox profile, check about:profiles in Firefox>
 
